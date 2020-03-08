@@ -1,0 +1,1 @@
+Project developed using technology NodeJS, MySQL and EJS
