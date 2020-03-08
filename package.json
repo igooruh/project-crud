@@ -1,0 +1,25 @@
+{
+  "name": "project-crud",
+  "version": "0.0.0",
+  "description": "create application with database to learning crud with nodeJs and mysql",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "crud",
+    "database",
+    "nodeJS",
+    "Learning",
+    "mysql"
+  ],
+  "author": "Ígor Pedro L M Martins",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  }
+}
