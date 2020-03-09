@@ -19,9 +19,21 @@ const registerPerson = async(connection, req, res) => {
     res.redirect('/persons')
 }
 
+const updateForm = async(connection, req, res) => {
+    const person = await personsModel.findById(connection, req.params.id)
+    res.render('persons/update', { person })
+}
+
+const updatePerson = async(connection, req, res) => {
+    await personsModel.updatePerson(connection, req.params.id, req.body)
+    res.redirect('/persons')
+}
+
 module.exports = {
     index,
     deleteOnePerson,
     createForm,
-    registerPerson
+    registerPerson,
+    updateForm,
+    updatePerson
 }

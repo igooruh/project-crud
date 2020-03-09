@@ -7,6 +7,8 @@ const personsRouter = ({ connection }) => {
     router.get('/delete/:id', personsController.deleteOnePerson.bind(null, connection))
     router.get('/create', personsController.createForm)
     router.post('/create', personsController.registerPerson.bind(null, connection))
+    router.get('/update/:id', personsController.updateForm.bind(null, connection))
+    router.post('/update/:id', personsController.updatePerson.bind(null, connection))
 
     return router
 }
